@@ -4,6 +4,60 @@
     "/Users/timoheiten/OneDrive/Company/Projects/Udemy_courses/rabbitmq/02_server_basics/connection_code/csharp/producer/producer.csproj": {}
   },
   "projects": {
+    "/Users/timoheiten/OneDrive/Company/Projects/Udemy_courses/rabbitmq/02_server_basics/connection_code/csharp/messages/messages.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/timoheiten/OneDrive/Company/Projects/Udemy_courses/rabbitmq/02_server_basics/connection_code/csharp/messages/messages.csproj",
+        "projectName": "messages",
+        "projectPath": "/Users/timoheiten/OneDrive/Company/Projects/Udemy_courses/rabbitmq/02_server_basics/connection_code/csharp/messages/messages.csproj",
+        "packagesPath": "/Users/timoheiten/.nuget/packages/",
+        "outputPath": "/Users/timoheiten/OneDrive/Company/Projects/Udemy_courses/rabbitmq/02_server_basics/connection_code/csharp/messages/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/timoheiten/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "/Users/timoheiten/OneDrive/Company/Projects/Udemy_courses/rabbitmq/02_server_basics/connection_code/csharp/producer/producer.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +81,11 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/timoheiten/OneDrive/Company/Projects/Udemy_courses/rabbitmq/02_server_basics/connection_code/csharp/messages/messages.csproj": {
+                "projectPath": "/Users/timoheiten/OneDrive/Company/Projects/Udemy_courses/rabbitmq/02_server_basics/connection_code/csharp/messages/messages.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,6 +102,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.0, )"
             }
           },
           "imports": [

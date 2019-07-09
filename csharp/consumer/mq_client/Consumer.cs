@@ -34,15 +34,7 @@ namespace consumer.mq_client
 
         private static ConnectionFactory Create()
         {
-            return new ConnectionFactory
-            {
-                HostName = "localhost",
-                Port = 5672,
-                UserName = "guest",
-                Password = "guest",
-                VirtualHost = "/",
-                Protocol = Protocols.DefaultProtocol
-            };
+            return messages.Connection.Stats.Create();
         }
     }
 }

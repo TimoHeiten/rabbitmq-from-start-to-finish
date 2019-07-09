@@ -6,7 +6,7 @@ namespace consumer
 {
     class Program
     {
-          static void Main(string[] args)
+        static void Main(string[] args)
         {
             string key = string.Empty;
             try
