@@ -8,6 +8,7 @@ namespace messages.Connection
 {
     public static class Stats
     {
+        public const string PIKA_QUEUE = "pika_queue";
         public static ConnectionFactory Create()
         {
             return new ConnectionFactory

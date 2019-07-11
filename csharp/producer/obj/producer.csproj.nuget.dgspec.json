@@ -39,6 +39,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "EasyNetQ": {
+              "target": "Package",
+              "version": "[3.5.1, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
