@@ -27,7 +27,8 @@ namespace reliability
         {
             s_runner = new Dictionary<string, Action>
             {
-                ["produce"] = reliability.publisher.Pub.Run
+                ["produce"] = reliability.publisher.Pub.Run,
+                ["consume"] = reliability.publisher.Consumer.Run
             };
         }
 

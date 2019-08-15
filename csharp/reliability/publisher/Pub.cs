@@ -34,7 +34,8 @@ namespace reliability.publisher
                     var message = "hello publisher confirm - " + i;
                     var payload = Encoding.Unicode.GetBytes(message);
                     Console.WriteLine("Sending message: " + message);
-                    channel.BasicPublish("", "any_non_existent_queue", null, payload);
+                    // Stats.PIKA_QUEUE
+                    channel.BasicPublish("", Stats.PIKA_QUEUE, null, payload);
                     Thread.Sleep(500);
                 }
                 channel.WaitForConfirmsOrDie();
